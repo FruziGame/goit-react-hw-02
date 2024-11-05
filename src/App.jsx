@@ -3,7 +3,7 @@ function App() {
   return (
     <>
       <p>
-        Click on the Vite and React logos
+        Click
       </p>
     </>
   )
