@@ -51,13 +51,8 @@ useEffect(() =>{
       <Description />
       <Options updateFeedback={updateFeedback} totalFeedback={totalFeedback} resetFeedback={resetFeedback} />
       {totalFeedback < 1 && <Notifications />}
-      <Feedback feedbacks={feedbacks} totalFeedback={totalFeedback}/>
-    </>
+      {totalFeedback > 0 && <Feedback feedbacks={feedbacks} totalFeedback={totalFeedback}/>}    </>
   )
 }
 
 export default App
-
-
-
-
